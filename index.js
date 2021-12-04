@@ -165,25 +165,25 @@ class Client {
 
         const deployDescribe = ['This deployment will:'];
 
-        if (this.cliOptions['delete-contents']) {
+        if (String(process.env.NO_DELETE_CONTENTS).toLowerCase() !== 'true') {
           deployDescribe.push(`- Remove all existing files from bucket '${bucketName}'`);
         }
         deployDescribe.push(
           `- Upload all files from '${distributionFolder}' to bucket '${bucketName}'`
         );
 
-        if (this.cliOptions['config-change'] !== false && manageResources !== false) {
+        if (String(process.env.NO_CONFIG_CHANGE).toLowerCase() !== 'true') {
           deployDescribe.push(`- Set (and overwrite) bucket '${bucketName}' configuration`);
         }
-        if (this.cliOptions['policy-change'] !== false && manageResources !== false) {
+        if (String(process.env.NO_POLICY_CHANGE).toLowerCase() !== 'true') {
           deployDescribe.push(`- Set (and overwrite) bucket '${bucketName}' bucket policy`);
         }
-        if (this.cliOptions['cors-change'] !== false && manageResources !== false) {
+        if (String(process.env.NO_CORS_CHANGE).toLowerCase() !== 'true') {
           deployDescribe.push(`- Set (and overwrite) bucket '${bucketName}' CORS policy`);
         }
 
         deployDescribe.forEach(m => this.serverless.cli.log(m));
-        return this.cliOptions.confirm === false
+        return String(process.env.NO_CONFIRM).toLowerCase() === 'true'
           ? true
           : new Confirm(`Do you want to proceed?`).run();
       })
