@@ -1,15 +1,15 @@
 # serverless-finch
 
-[![npm](https://img.shields.io/npm/dm/serverless-finch.svg)](https://www.npmjs.com/package/serverless-finch)
-[![npm](https://img.shields.io/npm/v/serverless-finch.svg)](https://www.npmjs.com/package/serverless-finch)
-[![license](https://img.shields.io/github/license/fernando-mc/serverless-finch.svg)](https://github.com/fernando-mc/serverless-finch/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dm/serverless-finch.svg)](https://www.npmjs.com/package/rodrigogs/serverless-finch)
+[![npm](https://img.shields.io/npm/v/serverless-finch.svg)](https://www.npmjs.com/package/rodrigogs/serverless-finch)
+[![license](https://img.shields.io/github/license/rodrigogs/serverless-finch.svg)](https://github.com/rodrigogs/juquinha/blob/master/serverless-finch/LICENSE)
 
 A Serverless Framework plugin for deployment of static website assets of your Serverless project to AWS S3.
 
 ## Installation
 
 ```
-npm install --save serverless-finch
+npm install --save @rodrigogs/serverless-finch
 ```
 
 ## Usage
@@ -371,7 +371,7 @@ region specified under `provider` in `serverless.yml`.
 _optional_, default `false` (deletes contents by default)
 
 ```bash
-serverless client deploy --no-delete-contents
+NO_DELETE_CONTENTS=true serverless client deploy
 ```
 
 Use this parameter if you do not want to delete the contents of your bucket before deployment. Files uploaded during deployment will still replace any corresponding files already in your bucket.
@@ -383,7 +383,7 @@ Use this parameter if you do not want to delete the contents of your bucket befo
 _optional_, default `false` (overwrites bucket configuration by default)
 
 ```bash
-serverless client deploy --no-config-change
+NO_CONFIG_CHANGE=true serverless client deploy
 ```
 
 Use this parameter if you do not want to overwrite the bucket configuration when deploying to your bucket.
@@ -395,7 +395,7 @@ Use this parameter if you do not want to overwrite the bucket configuration when
 _optional_, default `false` (overwrites bucket policy by default)
 
 ```bash
-serverless client deploy --no-policy-change
+NO_POLICY_CHANGE=true serverless client deploy
 ```
 
 Use this parameter if you do not want to overwrite the bucket policy when deploying to your bucket.
@@ -407,7 +407,7 @@ Use this parameter if you do not want to overwrite the bucket policy when deploy
 _optional_, default `false` (overwrites bucket CORS configuration by default)
 
 ```bash
-serverless client deploy --no-cors-change
+NO_CORS_CHANGE=true serverless client deploy
 ```
 
 Use this parameter if you do not want to overwrite the bucket CORS configuration when deploying to your bucket.
@@ -419,7 +419,7 @@ Use this parameter if you do not want to overwrite the bucket CORS configuration
 _optional_, default `false` (disables confirmation prompt)
 
 ```bash
-serverless client deploy --no-confirm
+NO_CONFIRM=true serverless client deploy
 ```
 
 Use this parameter if you do not want a confirmation prompt to interrupt automated builds.
@@ -502,5 +502,6 @@ For guidelines on contributing to the project, please refer to our [Contributing
 - [josephnle](https://github.com/josephnle)
 - [triptec](https://github.com/triptec)
 - [itsjesseyo](https://github.com/itsjesseyo)
+- [rodrigogs](https://github.com/rodrigo)
 
 Forked from the [**serverless-client-s3**](https://github.com/serverless/serverless-client-s3/)
