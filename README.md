@@ -1,15 +1,15 @@
 # serverless-finch
 
-[![npm](https://img.shields.io/npm/dm/serverless-finch.svg)](https://www.npmjs.com/package/serverless-finch)
-[![npm](https://img.shields.io/npm/v/serverless-finch.svg)](https://www.npmjs.com/package/serverless-finch)
-[![license](https://img.shields.io/github/license/fernando-mc/serverless-finch.svg)](https://github.com/fernando-mc/serverless-finch/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dm/serverless-finch.svg)](https://www.npmjs.com/package/rodrigogs/serverless-finch)
+[![npm](https://img.shields.io/npm/v/serverless-finch.svg)](https://www.npmjs.com/package/rodrigogs/serverless-finch)
+[![license](https://img.shields.io/github/license/rodrigogs/serverless-finch.svg)](https://github.com/rodrigogs/juquinha/blob/master/serverless-finch/LICENSE)
 
 A Serverless Framework plugin for deployment of static website assets of your Serverless project to AWS S3.
 
 ## Installation
 
 ```
-npm install --save serverless-finch
+npm install --save @rodrigogs/serverless-finch
 ```
 
 ## Usage
@@ -502,5 +502,6 @@ For guidelines on contributing to the project, please refer to our [Contributing
 - [josephnle](https://github.com/josephnle)
 - [triptec](https://github.com/triptec)
 - [itsjesseyo](https://github.com/itsjesseyo)
+- [rodrigogs](https://github.com/rodrigogs)
 
 Forked from the [**serverless-client-s3**](https://github.com/serverless/serverless-client-s3/)
