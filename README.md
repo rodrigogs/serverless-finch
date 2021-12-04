@@ -432,6 +432,9 @@ For guidelines on contributing to the project, please refer to our [Contributing
 
 ## Release Notes
 
+### v3.0.0
+- Moved cli options to environment variables
+
 ### v2.6.0
 
 - Fix bucket deletion when using the `keyPrefix` option - [Pull 102](https://github.com/fernando-mc/serverless-finch/pull/102) - [Joseph](https://github.com/josephnle)
