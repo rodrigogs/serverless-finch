@@ -1,6 +1,6 @@
 {
-  "name": "serverless-finch",
-  "version": "2.6.0",
+  "name": "@rodrigogs/serverless-finch",
+  "version": "3.0.0",
   "engines": {
     "node": ">=4.0"
   },
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fernando-mc/serverless-finch.git"
+    "url": "git+https://github.com/rodrigogs/serverless-finch.git"
   },
   "keywords": [
     "serverless",
@@ -36,9 +36,9 @@
   "author": "Fernando Medina Corey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fernando-mc/serverless-finch/issues"
+    "url": "https://github.com/rodrigogs/serverless-finch/issues"
   },
-  "homepage": "https://github.com/fernando-mc/serverless-finch#readme",
+  "homepage": "https://github.com/rodrigogs/serverless-finch#readme",
   "dependencies": {
     "is_js": "^0.9.0",
     "mime": "^1.2.11",
