@@ -6,6 +6,8 @@
 
 A Serverless Framework plugin for deployment of static website assets of your Serverless project to AWS S3.
 
+#### `Serverless framework is not allowing to pass cli arguments to plugins anymore, so this fork uses environment variables instead. Options still the same.`
+
 ## Installation
 
 ```
